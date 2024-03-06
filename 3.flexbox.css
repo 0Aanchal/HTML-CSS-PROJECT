@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Courier New', monospace; */
+}
+
+/* Apply styles to the HTML and body elements */
+html, body {
+  height: 100%;
+  width: 100%;
+  /* Additional styles for the HTML and body elements can be added here */
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.left{
+    width: 80%;
+    height: 100%;
+    background-color: red;
+}
+
+.ltop{
+    width: 100%;  /*parent = 80% */
+    height: 70%;
+    background-image: url("https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWluaW1hbCUyMHBsYW50fGVufDB8fDB8fHww");
+    background-size: cover;
+    position: relative;
+}
+
+.ltop i{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 6rem;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+
+
+.lbottom{
+    width: 100%;  /*parent = 80% */
+    height: 30%;
+    background-color:#222;
+    padding:3rem 5rem;
+}
+
+.right{
+    width: 20%;
+    height: 100%;
+    background-color:green;
+}
+
+.rtop{
+    width: 100%;
+    height: 70%;
+    background-color:#fff;
+}
+
+.rbottom{
+    width: 100%;
+    height: 30%;
+    background-color:#dadada;
+}
+
+.lbtmcontent{
+    width: 100%;
+    height: 30px;
+    color: white;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cntnleft{
+    width: 45%;
+    height: 100%; /* parent = 30px */
+    /* background-color: yellow; */
+}
+
+.cntnleft h1{
+   font-size: 2.2rem;
+}
+.cntnleft p{
+    opacity: 0.5;
+    margin-top: 2rem;
+    width:70%;
+}
+
+
+
+
+.cntnright{
+    width: 45%;
+    height: 100%; /* parent = 30px */
+    /* background-color:green; */
+}
+
+.row{
+    /* background-color: teal; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right:10rem ;
+}
+
+.rowleft{
+    /* background-color: red; */
+    display: flex;
+}
+
+.rowlefttext{
+    margin-left: 1rem;
+}
+
+.rowlefttext h6{
+   opacity: 0.5;
+}
+
+
+/* RIGHT STARTED */
+.rtop{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    position: relative;
+
+}
+
+.rtop a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: #000;
+    font-family: monospace;
+    margin-bottom: 2rem;
+}
+
+.rtop #selected{
+    position: relative;
+    margin-left: 1.25rem;
+}
+
+.rtop #selected::before{
+   content: "";
+   width:0.7rem ;
+   height: 0.12rem;
+   background-color: black;
+   position: absolute;
+   top: 50%;
+   left:-1.25rem;
+}
+
+.icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.25rem;
+
+}
+
+.icon i{
+    font-size: 1.25rem;
+}
+
+.btmflower{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 10rem;
+   background-image: url("https://plus.unsplash.com/premium_photo-1680630202094-cd15c8314657?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1pbmltYWwlMjBwbGFudHxlbnwwfHwwfHx8MA%3D%3D");
+   background-size: cover;
+   background-position: center;
+}
+
+.btmflower i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:1.3rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rbottom{
+    width: 100%;
+    height: 30%;
+    background-image: url("https://images.unsplash.com/photo-1487700160041-babef9c3cb55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWluaW1hbCUyMHBsYW50fGVufDB8fDB8fHww");
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.box{
+    width: 90%;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0);  /* bottom = 5% k liye height = 0 liya h */
+    border-radius: 0.5rem;
+}
+
+.box h4{
+    margin-right: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
