@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Apply styles to the HTML and body elements */
+html, body {
+  height: 100%;
+  width: 100%;
+  /* Additional styles for the HTML and body elements can be added here */
+  color: white;
+  overflow-y: hidden;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #717171;
+   display: flex;
+   position: relative;
+}
+  
+
+
+.left{
+    width: 40%;
+    height:100% ;
+    background-image: url("./leaves.jpg");
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+}
+
+.right{
+    width: 60%;
+    height:100% ;
+    background-color:#c6c6c7;
+    position: relative;
+
+}
+
+.menu{
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color:#20601f;
+    font-size: 1.3rem;
+   font-weight: 600;
+   position: relative;
+}
+
+
+.left h1{
+    font-size: 13rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 0.3rem;
+    z-index: 1;
+}
+
+
+/* TEXT ME IMAGE PUT KARNE K LIYE  */
+#textimg{
+    background-image: url("./leaves.jpg");
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.info{
+    position: absolute;
+    bottom: 10%;
+    left:19.2% ;
+    backface-visibility: blur(10px);
+    padding: 0.5rem 1rem;
+}
+
+.info p{
+    width: 25rem;
+    font-weight: 500;
+   
+}
+.info h2{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    
+}
+
+.right h1{
+    position:absolute ;
+    left:50% ;
+   top: 70%;
+    transform: translate(-50%,0);
+    font-size: 25rem;
+    display: inline;
+    
+}
+
+#zero{
+    background-image: url("./leaves.jpg");
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
