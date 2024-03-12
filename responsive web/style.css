@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Apply styles to the HTML and body elements */
+html, body {
+  height: 100%;
+  width: 100%;
+  /* Additional styles for the HTML and body elements can be added here */
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.left{
+  width: 40%;
+  height: 100%;
+  background-color: #dadada;
+  position: relative;
+}
+
+.text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+ 
+}
+
+.text h1{
+  font-size: 3rem;
+}
+
+.text h4{
+  font-size: 1rem;
+  opacity: 0.7;
+  line-height: 1.2rem;
+  margin: 2rem 0rem 1.5rem 0rem;
+  font-weight: 500;
+}
+
+.text a{
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+  border-bottom: 2px solid black;
+}
+
+.right{
+  width: 60%;
+  height: 100%;
+  background-color: rgb(17, 255, 0);
+  
+}
+
+.rtop{
+  width: 100%;
+  height: 50%;
+  background-color: aqua;
+  display: flex;
+}
+
+.rleft{
+  width: 50%;
+  height: 100%;
+  background-image: url("./orange.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.rright{
+  width: 50%;
+  height: 100%;
+  background-image: url("./cherry2.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.rbottom{
+  width: 100%;
+  height: 50%;
+  background-image: url("./banana.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media(max-width:500px){
+  .main{
+    flex-direction: column;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  .right{
+    width: 100%;
+  }
+
+}
